@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora simple</title>
+
+    <script>
+
+        function calculo(operacion){
+        let alojamiento;
+        let alimentacion;
+        let entretenimiento;
+        let total;
+       
+        alojamiento = parseFloat(document.calculadora.alojamiento.value);
+        alimentacion = parseFloat(document.calculadora.alimentacion.value);
+        entretenimiento = parseFloat(document.calculadora.entretenimiento.value);
+        
+        if(operacion == 1) total = alojamiento + alimentacion + entretenimiento;
+
+        document.calculadora.resultado.value = total;
+    }
+    </script>
+</head>
+<body>
+    <form name="calculadora">
+        alojamiento: <input type="text" name="alojamiento">
+        <br>
+        alimentacion: <input type="text" name="alimentacion">
+        <br>
+        entretenimiento: <input type="text" name="entretenimiento">
+        <br>
+        <input type="button" name="sumar" value="Calcular" onclick="calculo(1)">
+        <br>
+
+        total: <input type="text" name="resultado">
+
+    </form>
+    
+</body>
+</html>
