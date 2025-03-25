@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+
+    <script>
+
+        function calculoIMC(operacion){
+        let altura;
+        let peso;
+        let imc;
+        let msj;
+       
+        altura = parseFloat(document.calculadora.altura.value);
+        peso = parseFloat(document.calculadora.peso.value);
+        
+        if(operacion == 1) imc = peso / (altura * altura);
+        if(imc<18.5){
+            msj = 'bajo peso'
+        } else if(imc>=18.5 && imc<25){
+            msj = 'peso normal'
+        } else if(imc>=25 && imc<30){
+            msj = 'sobrepeso'
+        } else {
+            msj = 'obesidad'
+        }
+
+        document.calculadora.resultado.value = imc.toFixed(2);
+        document.calculadora.resultadoMSJ.value = msj;
+    }
+    </script>
+</head>
+<body>
+    <form name="calculadora">
+        peso en kg: <input type="text" name="peso">
+        <br>
+        altura en cm: <input type="text" name="altura">
+        <br>
+        <input type="button" name="sumar" value="Calcular IMC" onclick="calculoIMC(1)">
+        <br><br>
+        tu % grasa es de: <input type="text" name="resultado"><br>
+        imc: <input type="text" name="resultadoMSJ">
+
+
+    </form>
+    
+</body>
+</html>

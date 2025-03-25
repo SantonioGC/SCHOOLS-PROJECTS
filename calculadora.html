@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora simple</title>
+
+    <script>
+
+        function calculo(opera){
+        let num1;
+        let num2;
+        let resu;
+       
+        num1 = parseInt(document.calculadora.valor1.value);
+        num2 = parseInt(document.calculadora.valor2.value);
+        
+
+        if(opera == 1) resu = num1 + num2;
+        if(opera == 2) resu = num1 - num2;
+        if(opera == 3) resu = num1 * num2;
+        if(opera == 4) resu = num1 / num2;
+
+        document.calculadora.resultado.value = resu;
+    }
+    </script>
+</head>
+<body>
+    <form name="calculadora">
+        primer numero: <input type="text" name="valor1">
+        <br>
+        segundo numero: <input type="text" name="valor2">
+
+        <input type="button" name="sumar" value="+" onclick="calculo(1)">
+        <input type="button" name="restar" value="-" onclick="calculo(2)">
+        <input type="button" name="multplicar" value="x" onclick="calculo(3)">
+        <input type="button" name="dividir" value="/" onclick="calculo(4)">
+
+        <br>
+
+        resultado: <input type="text" name="resultado">
+
+    </form>
+    
+</body>
+</html>
