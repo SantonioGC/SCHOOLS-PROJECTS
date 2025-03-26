@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora simple</title>
+
+<script src="calculadora.js"></script>
+
+</head>
+<body>
+    <form name="calculadora">
+        primer numero: <input type="text" name="valor1">
+        <br>
+        segundo numero: <input type="text" name="valor2">
+
+        <input type="button" name="sumar" value="+" onclick="calculo(1)">
+        <input type="button" name="restar" value="-" onclick="calculo(2)">
+        <input type="button" name="multplicar" value="x" onclick="calculo(3)">
+        <input type="button" name="dividir" value="/" onclick="calculo(4)">
+
+        <br>
+
+        resultado: <input type="text" name="resultado">
+
+    </form>
+    
+</body>
+</html>
