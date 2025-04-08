@@ -1,0 +1,21 @@
+header {
+    background-color: green;
+}
+
+article {
+    background-color: aqua;
+}
+article h3 {
+    background-image: url("img/OIP.jpg");
+}
+
+.article {
+    padding: auto;
+}
+header,section,article,footer{
+    margin: 2px;
+}
+
+footer {
+    background-color: gray;
+}
