@@ -1,0 +1,9 @@
+h1,h4,input {
+    margin: 8px;
+    padding: 10px;
+    background-color: gray;
+}
+
+body{
+    background-color: gainsboro;
+}
