@@ -1,0 +1,65 @@
+[
+    {
+        "nombre": "Juan Pérez",
+        "peso": 70,
+        "altura": 1.75,
+        "gordura": 15,
+        "imc": 22.86
+    },
+    {
+        "nombre": "María González",
+        "peso": 65,
+        "altura": 1.68,
+        "gordura": 18,
+        "imc": 23.03
+    },
+    {
+        "nombre": "Carlos Ramírez",
+        "peso": 80,
+        "altura": 1.80,
+        "gordura": 20,
+        "imc": 24.69
+    },
+    {
+        "nombre": "Ana López",
+        "peso": 55,
+        "altura": 1.60,
+        "gordura": 22,
+        "imc": 21.48
+    },
+    {
+        "nombre": "Roberto Chávez",
+        "peso": 90,
+        "altura": 1.85,
+        "gordura": 25,
+        "imc": 26.29
+    },
+    {
+        "nombre": "Sofía Martínez",
+        "peso": 50,
+        "altura": 1.55,
+        "gordura": 19,
+        "imc": 20.81
+    },
+    {
+        "nombre": "Miguel Torres",
+        "peso": 75,
+        "altura": 1.78,
+        "gordura": 17,
+        "imc": 23.71
+    },
+    {
+        "nombre": "Laura Fernández",
+        "peso": 68,
+        "altura": 1.72,
+        "gordura": 16,
+        "imc": 22.98
+    },
+    {
+        "nombre": "Fernando Gutiérrez",
+        "peso": 85,
+        "altura": 1.83,
+        "gordura": 21,
+        "imc": 25.38
+    }
+]
