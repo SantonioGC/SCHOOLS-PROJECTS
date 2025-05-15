@@ -29,7 +29,7 @@ var botonBuscar = document.querySelector("#buscar-paciente");
 
 botonBuscar.addEventListener("click", function() {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://github.com/SantonioGC/SCHOOLS-PROJECTS/blob/main/pacientes.json");
+    xhr.open("GET", "https://raw.githubusercontent.com/SantonioGC/SCHOOLS-PROJECTS/refs/heads/main/Practica%20de%20Ajax/pacientes.json");
 
     xhr.addEventListener("load", function() {
         if (xhr.status == 200) {
