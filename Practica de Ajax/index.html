@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrar Lista de Pacientes</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="titulo">Listado de Pacientes</h1>
+    </div>
+</header>
+<main>
+    <section class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Peso (kg)</th>
+                    <th>Altura (m)</th>
+                    <th>Gordura Corporal (%)</th>
+                    <th>IMC</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-pacientes"></tbody>
+        </table>
+        <span id="error-ajax" style="visibility: hidden;">Error al buscar los pacientes</span>
+        <button id="buscar-paciente" class="boton bto-principal">Buscar Pacientes</button>
+    </section>
+</main>
+
+<script src="funcion.js">
+</script>
+
+</body>
+</html>
